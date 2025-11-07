@@ -1,4 +1,4 @@
-import Stage from './components/Stage';
+import Stage from './components/Stage/Stage';
 
 const App: React.FC = () => {
   return (

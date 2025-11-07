@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: 'Open Sans', sans-serif;
-}
-
-.container {
-  width: 720px;
-  margin-right: auto;
-  margin-left: auto;
+body {
+  background: linear-gradient(145deg, #eef2ff, #f4f6fb);
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  color: #1e293b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

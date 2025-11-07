@@ -1,0 +1,23 @@
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ddd;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background-color: #5a67d8; /* fialová */
+}
+
+.dot.current {
+  background-color: #ffcc00; /* zlatá pro aktivní */
+  box-shadow: 0 0 10px #ffcc00;
+}

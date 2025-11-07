@@ -1,0 +1,17 @@
+.wordbox {
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 4px;
+  background: #f9fafb;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.wordbox--mistake {
+  border-color: #ef4444;
+  background: #fee2e2;
+  color: #b91c1c;
+  transform: scale(1.03);
+}

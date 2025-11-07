@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './style.css';
+import './Wordbox.css';
 
 interface IWordboxProp {
   word: string;
