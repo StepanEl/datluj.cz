@@ -3,6 +3,7 @@ import Wordbox from '../Wordbox/Wordbox';
 import wordList from '../../word-list';
 import './Stage.css';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import Timer from '../Timer/Timer';
 
 // TODO: temporary disable function - remove next line when you start using it
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
@@ -63,8 +64,9 @@ const Stage = () => {
 
   return (
     <div className="stage">
+      <div className='time'><Timer /></div>
       <ProgressBar level={level} />
-      <h2>Úroveň: {level}</h2>
+      <h2>Úroveň: {level} / 16</h2>
       <div className="stage__mistakes">
         <p>Správně napsaná slova: {wordsCompleted}</p>
         Chyb: {mistakes}

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(145deg, #eef2ff, #f4f6fb);
   font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -6,4 +12,37 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  bottom: 28em;
+  right: -12rem;
+  height: 250px;
+  z-index: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  img {
+    height: 180px;
+    bottom: 31em;
+    right: -5rem;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  color: #a29f9f;
+  margin-bottom: 20px;
+  text-shadow: 1.5px 1px 0px #808080;
 }
