@@ -8,16 +8,28 @@ interface IWordboxProp {
   onMistake: () => void
 }
 
-const Wordbox: React.FC<IWordboxProp> = ({ word, onFinish, active, onMistake }) => {
+const Wordbox = ({ word, onFinish, active, onMistake }: IWordboxProp) => {
   const [lettersLeft, setLettersLeft] = useState<string>(word);
   const [mistake, setMistake] = useState<boolean>(false)
 
- useEffect(() => {
+  useEffect(() => {
     setLettersLeft(word);
     setMistake(false);
   }, [word]);
 
   const handleKeyUp = (e: KeyboardEvent) => {
+
+    const ignoredKeys = [
+      "Enter", "Tab", " ", "Escape", "Shift", "Control", "Alt", "Meta",
+      "CapsLock", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight",
+      "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"
+    ];
+
+    if (ignoredKeys.includes(e.key)) {
+      e.preventDefault();
+      return;
+    }
+
     if (!active) return;
 
     if (e.key === lettersLeft[0]) {

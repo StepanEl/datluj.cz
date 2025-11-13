@@ -23,7 +23,7 @@ body {
   position: relative;
 }
 
-img {
+.logo {
   position: absolute;
   bottom: 28em;
   right: -12rem;
@@ -33,7 +33,7 @@ img {
 }
 
 @media (max-width: 768px) {
-  img {
+  .logo {
     height: 180px;
     bottom: 31em;
     right: -5rem;
@@ -42,7 +42,7 @@ img {
 
 h1 {
   font-size: 3rem;
-  color: #a29f9f;
+  color: #cccccc;
   margin-bottom: 20px;
-  text-shadow: 1.5px 1px 0px #808080;
-}
+  text-shadow: 1.5px 2px 0px #808080;
+  }

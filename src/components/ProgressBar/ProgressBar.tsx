@@ -1,10 +1,10 @@
 import './ProgressBar.css';
 
-interface ProgressBarProps {
+interface IProgressBarProps {
   level: number;
 }
 
-const ProgressBar: React.FC<ProgressBarProps> = ({ level }) => {
+const ProgressBar= ({ level }: IProgressBarProps) => {
   return (
     <div className="progress-bar">
       {Array.from({ length: 16}).map((_, index) => (

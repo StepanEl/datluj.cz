@@ -1,0 +1,31 @@
+.results {
+    position: absolute;
+    top: 35%;
+    left: 15%;
+    width: 70%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(145deg, #eef2ff, #f4f6fb);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 33%);
+    border-radius: 8px;
+    padding: 20px;
+    padding-bottom: 70px;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(0) scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.thumb {
+    width: 100px;
+    margin-top: 20px;
+}
